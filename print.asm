@@ -1,29 +1,15 @@
-; taken from somewhere else, but I forget
-
 print:
     pusha
-start:
+print_char:
     mov al, [bx]
     cmp al, 0
-    je done
+    je print_exit
 
     mov ah, 0x0e
     int 0x10
 
     add bx, 1
-    jmp start
-done:
-    popa
-    ret
-
-print_newline:
-    pusha
-    
-    mov ah, 0x0e
-    mov al, 0x0a
-    int 0x10
-    mov al, 0x0d
-    int 0x10
-    
+    jmp print_char
+print_exit:
     popa
     ret

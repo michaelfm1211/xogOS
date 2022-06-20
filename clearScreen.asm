@@ -1,13 +1,12 @@
-; taken from https://stackoverflow.com/questions/22972951/cant-clear-entire-screen-in-16-bit-real-mode-assembly
-
 clearScreen:
     pusha
-
-    mov ax, 0x0700
+    mov ah, 0x7
+    mov al, 0x0
     mov bh, 0x07
-    mov cx, 0x0000
-    mov dx, 0x184f
+    mov ch, 0x0
+    mov cl, 0x0
+    mov dh, 0x18
+    mov dl, 0x4f
     int 0x10
-
     popa
     ret
