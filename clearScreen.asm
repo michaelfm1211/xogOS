@@ -1,9 +1,3 @@
-;; File              : clearScreen.asm
-;; Author            : Michael M <mic@hael.xyz>
-;; Date              : 01.09.2021
-;; Last Modified Date: 01.09.2021
-;; Last Modified By  : Michael M <mic@hael.xyz>
-
 ; taken from https://stackoverflow.com/questions/22972951/cant-clear-entire-screen-in-16-bit-real-mode-assembly
 
 clearScreen:

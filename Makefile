@@ -1,9 +1,3 @@
-# File              : Makefile
-# Author            : Michael M <mic@hael.xyz>
-# Date              : 01.09.2021
-# Last Modified Date: 01.09.2021
-# Last Modified By  : Michael M <mic@hael.xyz>
-
 all: xogOS.bin
 
 xogOS.bin: xog.asm

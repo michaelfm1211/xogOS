@@ -1,9 +1,3 @@
-;; File              : xog.asm
-;; Author            : Michael M <mic@hael.xyz>
-;; Date              : 01.09.2021
-;; Last Modified Date: 01.09.2021
-;; Last Modified By  : Michael M <mic@hael.xyz>
-
 [org 0x7c00]
 boot:
 	call clearScreen
